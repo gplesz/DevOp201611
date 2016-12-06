@@ -4,6 +4,11 @@ A NetAcademia DevOp tanfolyamának kódtár kiegészítése
 ## Előkészületek
 A tanfolyam zökkenőmentes elvégzéséhez a következő előkészületekre van szükség
 
+### Windows virtuális gépek
+Windows virtuális gépekre lesz szükségünk, amihez az alapot [innen lehet letölteni](https://vidibitstorage.blob.core.windows.net/elsfree/w2k12r2-1.rar):
+
+Letöltés után csomagoljuk ki, és másoljuk le háromszor, ezekre fogjuk telepíteni a build szerverünkről az SQL szervert, a WebAPI-t és a Webes alkalmazásunkat. A gépekre a bejelentkezési név: **Administrator** a jelszó: **Windows2012**
+
 ### Azure regisztráció
 Az [Azure kezdőlapon](https://azure.microsoft.com/hu-hu/) lehet a regisztrációt kezdeményezni a **Kezdetben ingyenes** gombbal. Kell hozzá egy Microsof-fiók, egy telefonszám és egy (VISA/Mastercard/AmericanExpress) bankkártya. A regisztráció ingyenes, és az első 30 napban 170 EUR keretet ad, ezt fogjuk felhasználni a tanfolyamon. Az ingyenességről [itt lehet részletesen olvasni](https://azure.microsoft.com/hu-hu/free/free-account-faq/).
 
@@ -11,15 +16,25 @@ Az [Azure kezdőlapon](https://azure.microsoft.com/hu-hu/) lehet a regisztráci�
 A [Visual Studio kezdőoldalán](https://www.visualstudio.com/) a középső oszlopban lévő Visual Studio Team Services alatt a **Get started for free** feliratnál lehet kezdeményezni. Az előző lépésben használt Microsoft-fiók kell hozzá.
 
 ### Chocolatey telepítése
+### Csomagkezelő
+[Csomagkezelőt](http://netacademia.blog.hu/2016/11/03/hogyan_keszitsunk_chocolatey_csomagot_az_alkalmazasunkhoz) telepítünk: [chocolatey.org](https://chocolatey.org/)
+
+Telepítéshez ezt másoljuk a vágólapra az oldalról: 
+
+**@powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"**
+
+majd bemásoljuk egy adminisztrátori parancssorba, és lefuttatjuk.
+
+(ld. [ElasticSearch dióhéjban tanfolyam](http://netacademia.hu/ELSfree-elastic-search--nutshell), előkészületek fejezetben, kb a 12. perctől)
 
 ### Visual Studio 2015 Community telepítése
+Adminisztrátori parancssorból: **cinst visualstudio2015community** (nagyjából 35 perc)
 
 ### SQL Server 2016 Express telepítése
+Adminisztrátori parancssorból: **cinst sql-server-express** (nagyjából 10 perc)
 
-### Windows virtuális gépek
-Windows virtuális gépekre lesz szükségünk, amihez az alapot [innen lehet letölteni](https://vidibitstorage.blob.core.windows.net/elsfree/w2k12r2-1.rar):
-
-Letöltés után csomagoljuk ki, és másoljuk le háromszor, ezekre fogjuk telepíteni a build szerverünkről az SQL szervert, a WebAPI-t és a Webes alkalmazásunkat. A gépekre a bejelentkezési név: **Administrator** a jelszó: **Windows2012**
+### SQL Server management Studio telepítése
+Adminisztrátori parancssorból: **cinst sql-server-management-studio** (nagyjából 15 perc)
 
 ### Az ElasticSearch 
 Korábban tartottunk egy [Elasticsearch ingyenes alkalmat](http://netacademia.hu/ELSfree-elastic-search--nutshell), ahol négy órában telepítettük az ElasticSearch csomag elemeit és a RabbitMQ üzenetszolgáltatást. Érdemes áttekinteni, mert annak a tanfolyamnak az eredményeit felhasználva indulunk neki az események begyűjtésének.
