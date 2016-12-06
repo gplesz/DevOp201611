@@ -15,7 +15,7 @@ Windows virtuális gépekre lesz szükségünk, amihez az alapot [innen lehet le
 Letöltés után csomagoljuk ki, és másoljuk le háromszor, ezekre fogjuk telepíteni a build szerverünkről az SQL szervert, a WebAPI-t és a Webes alkalmazásunkat. A gépekre a bejelentkezési név: **Administrator** a jelszó: **Windows2012**
 
 ### Azure regisztráció
-Az [Azure kezdőlapon](https://azure.microsoft.com/hu-hu/) lehet a regisztrációt kezdeményezni a **Kezdetben ingyenes** gombbal. Kell hozzá egy Microsof-fiók, egy telefonszám és egy (VISA/Mastercard/AmericanExpress) bankkártya. A regisztráció ingyenes, és az első 30 napban 170 EUR keretet ad, ezt fogjuk felhasználni a tanfolyamon. Az ingyenességről [itt lehet részletesen olvasni](https://azure.microsoft.com/hu-hu/free/free-account-faq/).
+Az [Azure kezdőlapon](https://azure.microsoft.com/hu-hu/) lehet a regisztrációt kezdeményezni a **Kezdetben ingyenes** gombbal. Kell hozzá egy Microsoft-fiók, egy telefonszám és egy (VISA/Mastercard/AmericanExpress) bankkártya. A regisztráció ingyenes, és az első 30 napban 170 EUR keretet ad, ezt fogjuk felhasználni a tanfolyamon. Az ingyenességről [itt lehet részletesen olvasni](https://azure.microsoft.com/hu-hu/free/free-account-faq/).
 
 ### visualstudio.com regisztráció
 A [Visual Studio kezdőoldalán](https://www.visualstudio.com/) a középső oszlopban lévő Visual Studio Team Services alatt a **Get started for free** feliratnál lehet kezdeményezni. Az előző lépésben használt Microsoft-fiók kell hozzá.
