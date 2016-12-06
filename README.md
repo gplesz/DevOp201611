@@ -4,6 +4,11 @@ A NetAcademia DevOp tanfolyamának kódtár kiegészítése
 ## Előkészületek
 A tanfolyam zökkenőmentes elvégzéséhez a következő előkészületekre van szükség
 
+### VMWare player telepítése
+A használathoz a VMWare ingyenes Player kell, amit [innen lehet letölteni](http://www.vmware.com/products/player/playerpro-evaluation.html)
+
+A VMWare Windows 10-re telepítéséhez lehet, hogy  [le kell tiltani a Credential Guard/Device Guard](https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=2146361) nevű szolgáltatást. Részletes leírás a linken.
+
 ### Windows virtuális gépek
 Windows virtuális gépekre lesz szükségünk, amihez az alapot [innen lehet letölteni](https://vidibitstorage.blob.core.windows.net/elsfree/w2k12r2-1.rar):
 
