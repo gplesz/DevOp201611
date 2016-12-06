@@ -17,7 +17,7 @@ A [Visual Studio kezdőoldalán](https://www.visualstudio.com/) a középső osz
 ### SQL Server 2016 Express telepítése
 
 ### Windows virtuális gépek
-Windows virtuális gépekre lesz szükségünk, amit [innen lehet letölteni](https://vidibitstorage.blob.core.windows.net/elsfree/w2k12r2-1.rar):
+Windows virtuális gépekre lesz szükségünk, amihez az alapot [innen lehet letölteni](https://vidibitstorage.blob.core.windows.net/elsfree/w2k12r2-1.rar):
 
 Letöltés után csomagoljuk ki, és másoljuk le háromszor, ezekre fogjuk telepíteni a build szerverünkről az SQL szervert, a WebAPI-t és a Webes alkalmazásunkat. A gépekre a bejelentkezési név: **Administrator** a jelszó: **Windows2012**
 
