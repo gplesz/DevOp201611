@@ -48,8 +48,5 @@ namespace DevOpApp
                 log.DebugFormat("Begin: {0}", this.Request.RawUrl);
             }
         }
-
-
-
     }
 }
